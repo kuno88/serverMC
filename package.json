@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node build/index.js",
-    "dev":"nodemon src/index.js --exec babel-node",
-    "build":"babel src --out-dir build"
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src --out-dir build"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,12 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "express-validator": "^6.14.2",
     "helmet": "^5.1.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.4.4",
+    "mongoose-delete": "^0.5.4",
+    "mongoosejs-soft-delete": "^1.0.2",
     "morgan": "^1.10.0"
   },
   "devDependencies": {

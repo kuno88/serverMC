@@ -4,13 +4,15 @@ const router = Router();
 
 router.get('/',canarysCtrl.getItems)
 
-router.get('/:canaryId',canarysCtrl.getItem)
+router.get('/:id',canarysCtrl.getItem)
 
 router.post('/',canarysCtrl.createItem)
 
-router.put('/:canaryId',canarysCtrl.updateItem)
+router.put('/:id',canarysCtrl.updateItem)
 
-router.delete('/:canaryId',canarysCtrl.deleteItem)
+router.delete('/:id',canarysCtrl.deleteItem)
+
+router.get('/recovery/:deleted',canarysCtrl.deletedItems)
 
 
 

@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "043040df-ca99-4c54-af0f-7d09a10fba05",
+		"name": "Canarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7359074"
+	},
+	"item": [
+		{
+			"name": "obtener todos los canarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "API_KEY",
+						"value": "kuno-01",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"procedencia\": \"Salvucci\",\r\n    \"genero\": \"macho\",\r\n    \"numeroAnillo\": 41,\r\n    \"linea\": \"Rojo nevado marfil\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/canarys",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"canarys"
+					]
+				},
+				"description": "Obtener todos los canarios"
+			},
+			"response": []
+		},
+		{
+			"name": "crear canario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"origen\": \"prueba canario5\",\r\n    \"gender\": \"hembra\",\r\n    \"year\": 2022,\r\n    \"linea\": \"rojo mosaico\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/canarys",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"canarys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener 1 canario",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/canarys/62ca618d8ddb8f5e6f030afb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"canarys",
+						"62ca618d8ddb8f5e6f030afb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar canario",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"origen\": \"prueba canario6\",\r\n    \"gender\": \"macho\",\r\n    \"year\": 2022,\r\n    \"linea\": \"rojo mosaico\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/canarys/62ca618d8ddb8f5e6f030afb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"canarys",
+						"62ca618d8ddb8f5e6f030afb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar canario",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"procedencia\": \"Salvucci\",\r\n    \"genero\": \"macho\",\r\n    \"numeroAnillo\": 41,\r\n    \"linea\": \"Rojo nevado marfil\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/canarys/62c88a62446dda07e5f3747b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"canarys",
+						"62c88a62446dda07e5f3747b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
